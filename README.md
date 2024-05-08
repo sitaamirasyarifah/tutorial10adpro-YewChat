@@ -10,8 +10,8 @@ Kelas: C
 
 
 ### 3.1. Original code
-![alt text](img/yewchat.jpg)
-![alt text](img/yewchat1.jpg)
+![alt text](img/yewchat.jpeg)
+![alt text](img/yewchat1.jpeg)
 
 
 
