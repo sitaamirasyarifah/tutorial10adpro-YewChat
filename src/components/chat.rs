@@ -93,8 +93,7 @@ impl Component for Chat {
                             .map(|u| UserProfile {
                                 name: u.into(),
                                 avatar: format!(
-                                    "https://avatars.dicebear.com/api/adventurer-neutral/{}.svg",
-                                    u
+                                    "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671140.jpg?w=740&t=st=1715170758~exp=1715171358~hmac=e3f34a4796b5460c36cf566ade01e08234a8321841f0040fea9d889f32815a89"
                                 )
                                 .into(),
                             })
@@ -139,8 +138,8 @@ impl Component for Chat {
         let submit = ctx.link().callback(|_| Msg::SubmitMessage);
 
         html! {
-            <div class="flex w-screen">
-                <div class="flex-none w-56 h-screen bg-gray-100">
+            <div class="flex w-screen" style="background-image: url('https://img.freepik.com/premium-photo/3d-illustration-multiple-speech-bubbles-speech-conversation-3d-icon-wallpaper_249854-583.jpg?w=900'); background-size: cover; background-repeat: no-repeat;">
+                <div class="flex-none w-56 h-screen bg-white-100" style="background-color: #fff">
                     <div class="text-xl p-3">{"Users"}</div>
                     {
                         self.users.clone().iter().map(|u| {
@@ -163,7 +162,7 @@ impl Component for Chat {
                     }
                 </div>
                 <div class="grow h-screen flex flex-col">
-                    <div class="w-full h-14 border-b-2 border-gray-300"><div class="text-xl p-3">{"💬 Chat!"}</div></div>
+                    <div class="w-full h-14 border-b-2 border-gray-300" style="background-color: #fff;"><div class="text-xl p-3">{"💬 Chat!"}</div></div>
                     <div class="w-full grow overflow-auto border-b-2 border-gray-300">
                         {
                             self.messages.iter().map(|m| {

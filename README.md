@@ -14,7 +14,10 @@ Kelas: C
 ![alt text](img/yewchat1.jpeg)
 
 
+### 3.2. Add some creativities to the webclient
+![alt text](img/yewchat2.jpeg)
 
+For creativity, I changed the theme of the webchat to be purple-colored. Additionally, I also changed the avatar in the profile picture to an image of a woman. I made these modifications in the `chat.rs` file in its HTML section.
 
 > Source code for [Let’s Build a Websocket Chat Project With Rust and Yew 0.19 🦀](https://fsjohnny.medium.com/lets-build-a-websockets-project-with-rust-and-yew-0-19-60720367399f)
 
